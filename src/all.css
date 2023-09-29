@@ -1,0 +1,13 @@
+.all-box {
+    display: flex;
+    width: 164px;
+    height: 113px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #C7C7C7;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
