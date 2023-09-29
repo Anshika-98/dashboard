@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header-custom">
-        <p className='gym-name'>Palladium Dasboard</p>
+        <p className='gym-name'>Palladium Dashboard</p>
+        <p className='centre-text'>Welcome back Dan</p>
       </header>
       <p>HEY</p>
     </div>
