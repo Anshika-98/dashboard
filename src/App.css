@@ -8,17 +8,50 @@ flex-shrink: 0;
 border-radius: 15px;
 background: #A379BC;
 }
-.gym-name{
+/* Default styles for .gym-name */
+.gym-name {
   color: #000;
-font-family: Noto Sans;
-font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: fixed;
+  margin-left: 88px;
+  margin-right: auto;
+  margin-top: 51px;
+  margin-bottom: 141px;
+}
+
+/* Adjust styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .gym-name {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-left: 20px; /* Adjust margins for smaller screens */
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Adjust styles for screens smaller than 400px */
+@media (max-width: 400px) {
+  .gym-name {
+    font-size: 14px; /* Further reduce font size for very small screens */
+    margin-left: 10px; /* Further adjust margins for very small screens */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.centre-text{
+  color: #000;
+text-align: center;
+font-family: 'Noto Sans', sans-serif;
+font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-position: fixed;
-margin-left: 88px;
-margin-right: auto;
-margin-top:51px ;
-margin-bottom: 141px;
+padding-top: 51px;
 
 }
