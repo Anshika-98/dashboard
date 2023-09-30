@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .App-header-custom {
@@ -44,6 +46,12 @@
   margin-right: auto;
   margin-top: 51px;
   margin-bottom: 141px;
+}
+.gym-image{
+ float: left;
+  margin-right: 800px;
+  position: fixed;
+
 }
 
 /* Adjust styles for screens smaller than 600px */
@@ -163,9 +171,38 @@
   margin-top: 20px; /* Adjust margin-top as needed */
   margin-bottom: auto;
 }
+.main-columns {
+  display: grid;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust margin-top as needed */
+  float: left;
+  grid-template-columns: 1fr 1fr;
 
-.scroll-headings {
-  margin-top: 80px; /* Adjust margin-top as needed */
-  margin-bottom: 20px; /* Adjust margin-bottom as needed */
+}
+.image-right {
+  float: right;
+  margin-right: 100px; /* Default margin for larger screens */
+  margin-left: auto;
+}
+
+/* Adjust styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .image-right {
+    margin-right: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Adjust styles for screens larger than 1200px (for example) */
+@media (min-width: 1200px) {
+  .image-right {
+    margin-right: 200px; /* Adjust margin for larger screens */
+  }
+}
+.analytics{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 100px;
+  font-size: 25px;
+  padding-inline: 10px;
 }
 
