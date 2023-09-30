@@ -1,13 +1,36 @@
 .App {
   text-align: center;
 }
+
 .App-header-custom {
   width: auto;
-height: 182px;
-flex-shrink: 0;
-border-radius: 15px;
-background: #A379BC;
+  height: 182px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #A379BC;
 }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box-container {
+  display: flex; /* Add flex display to arrange .all-box and .week-box side by side */
+  align-items: center; /* Center items vertically */
+}
+
+
 /* Default styles for .gym-name */
 .gym-name {
   color: #000;
@@ -26,8 +49,10 @@ background: #A379BC;
 /* Adjust styles for screens smaller than 600px */
 @media (max-width: 600px) {
   .gym-name {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    margin-left: 20px; /* Adjust margins for smaller screens */
+    font-size: 16px;
+    /* Adjust font size for smaller screens */
+    margin-left: 20px;
+    /* Adjust margins for smaller screens */
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -37,20 +62,110 @@ background: #A379BC;
 /* Adjust styles for screens smaller than 400px */
 @media (max-width: 400px) {
   .gym-name {
-    font-size: 14px; /* Further reduce font size for very small screens */
-    margin-left: 10px; /* Further adjust margins for very small screens */
+    font-size: 14px;
+    /* Further reduce font size for very small screens */
+    margin-left: 10px;
+    /* Further adjust margins for very small screens */
     margin-top: 10px;
     margin-bottom: 20px;
   }
 }
-.centre-text{
-  color: #000;
-text-align: center;
-font-family: 'Noto Sans', sans-serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding-top: 51px;
 
+.centre-text {
+  color: #000;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 51px;
+  margin-left: 0%;
+  text-align: center;
 }
+
+.tag-box {
+  display: flex;
+  width: 99px;
+  height: 47px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #C7C7C7;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.reset-box {
+  display: flex;
+  width: 164px;
+  height: 113px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #C7C7C7;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tag-text {
+  display: flex;
+  width: 99px;
+  height: 47px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.reset-text {
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.box-container {
+  display: flex;
+  align-items: center;
+}
+
+.box-with-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px; /* Add margin between the two boxes */
+}
+
+.all-box,
+.week-box {
+  width: 265px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #BD9CD0;
+  border-radius: 8px;
+  margin-top: 20px; /* Adjust margin-top as needed */
+  margin-bottom: auto;
+}
+
+.scroll-headings {
+  margin-top: 80px; /* Adjust margin-top as needed */
+  margin-bottom: 20px; /* Adjust margin-bottom as needed */
+}
+
