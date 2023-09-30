@@ -21,9 +21,9 @@
   align-items: center;
 }
 .header-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  margin-right: auto;
+  margin-top: auto;
+  margin-left: 10%;
 }
 .box-container {
   display: flex; /* Add flex display to arrange .all-box and .week-box side by side */
@@ -80,7 +80,7 @@
   font-weight: 700;
   line-height: normal;
   padding-top: 51px;
-  margin-left: 0%;
+  margin-right: 35%;
   text-align: center;
 }
 
@@ -152,7 +152,7 @@
   margin-right: 10px; /* Add margin between the two boxes */
 }
 
-.all-box,
+.dropdown-box,
 .week-box {
   width: 265px;
   height: 26px;
