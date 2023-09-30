@@ -1,28 +1,17 @@
-.columns-container {
-    display: grid;
-    background-color:black;
-  }
-  
+
   .column {
-    width: 295px;
-    display: grid;
-    flex-direction: row;
-    margin-right: 20px; /* Add space between columns */
-    background: black;
-    margin: auto;
+    width: 600px;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
   }
   
   .row {
-    width: 295px;
-height: 89px;
-    padding: 22px 12px 22px 11px;
-    display: flex;
-    font-family: 'Noto Sans',sans-serif;
-    font-size: 16px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    background: black; ; /* Set your background color */
-    margin-bottom: 60px; /* Add space between rows */
+    height: 200px;
+    display: grid; /* Add your desired background color */
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    border-radius: 8px;
   }
   
