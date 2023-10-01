@@ -26,10 +26,10 @@ function App() {
           </div>
         </div>
       </header>
-      <div className='analytics'>
-       <div className='row'><AnalyticsCol /></div>
-     
-        <img src={climbpng} alt="climb" width="400px" />
+      <div className='analytics' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <AnalyticsCol />
+      <img src={climbpng} alt="climb" width="304px"
+height="449px" style={{ display: 'block', margin: '10px auto' }} />
       </div>
     </div>
   );

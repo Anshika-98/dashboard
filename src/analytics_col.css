@@ -5,13 +5,15 @@
     align-items: center;
     margin-block-start: 10px;
     margin-block-end: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   
   .row {
-    height: 200px;
-    display: grid; /* Add your desired background color */
+     /* Add your desired background color */
     margin-block-start: 10px;
     margin-block-end: 10px;
-    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   

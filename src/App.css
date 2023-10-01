@@ -2,6 +2,7 @@
   text-align: center;
   display: grid;
   grid-template-rows: auto;
+  background-color:#E3E3E3; ;
 }
 
 .App-header-custom {
