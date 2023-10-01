@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Dropdown from './dropdown';
 import AnalyticsCol from './analytics_col';
+import Footer from './footer';
 import climbpng from './images/Palladium climbing.jpeg';
 import gymimage from './images/NYU-sportlogo.png';
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header-custom">
         <div className="header-content">
-        <div className='header-left'><Dropdown /></div>
+          <div className='header-left'><Dropdown /></div>
           <p className='gym-name'>Palladium Dashboard</p>
           <div className='gym-image'><img src={gymimage} alt="climb" width="50px" /></div>
           <p className='centre-text'>Welcome back Dan</p>
@@ -27,10 +28,11 @@ function App() {
         </div>
       </header>
       <div className='analytics' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  <AnalyticsCol />
-      <img src={climbpng} alt="climb" width="304px"
-height="449px" style={{ display: 'block', margin: '10px auto' }} />
+        <AnalyticsCol />
+        <img src={climbpng} alt="climb" width="304px"
+          height="449px" style={{ display: 'block', margin: '10px auto' }} />
       </div>
+      <Footer/>
     </div>
   );
 }
